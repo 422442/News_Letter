@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Page 15</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-navy {
+            background-color: #002147;
+        }
+
+        .text-navy {
+            color: #002147;
+        }
+
+        .text-gold {
+            color: #B4975A;
+        }
+
+        .bg-gold {
+            background-color: #B4975A;
+        }
+
+        .border-gold {
+            border-color: #B4975A;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .noble-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(180, 151, 90, 0.03), transparent);
+            z-index: 0;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-container {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- Background Accent -->
+        <div class="noble-accent"></div>
+
+        <!-- Header -->
+        <header class="bg-navy p-6 flex justify-between items-center text-white relative z-20">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gold"></div>
+            <div class="flex items-center space-x-5">
+                <img src="images/LOGO.png" alt="USET Logo" class="w-14 h-14 object-contain">
+                <div class="border-l border-white/20 pl-5">
+                    <h2 class="serif text-2xl tracking-[0.1em] uppercase">The USET Chronicle</h2>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-gold font-semibold">Empowerment & Service |
+                        July – Dec 2025</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-[10px] uppercase tracking-widest opacity-60 mb-1">Page</p>
+                <span class="text-gold font-bold text-3xl">15</span>
+            </div>
+        </header>
+
+        <!-- Main Content with justify-between to distribute space evenly -->
+        <main class="flex-grow relative px-12 pt-8 pb-6 flex flex-col justify-between z-10">
+
+            <!-- Section Title -->
+            <div class="text-center">
+                <h1 class="serif text-5xl text-navy">Voices of <span class="text-gold italic">Change</span></h1>
+                <p class="text-[10px] uppercase tracking-[0.5em] text-gray-400 font-bold mt-3 italic">Building a
+                    Responsible & Empowered Community</p>
+                <div class="h-0.5 w-28 bg-gold mt-4 mx-auto opacity-50"></div>
+            </div>
+
+            <!-- FEATURE 1: Swachhta Hi Sewa -->
+            <section class="grid grid-cols-12 gap-10 items-center">
+                <div class="col-span-5 flex flex-col justify-center">
+                    <div
+                        class="inline-block bg-navy text-gold px-3 py-1 text-[9px] font-bold uppercase tracking-widest mb-3 w-fit">
+                        NSS Initiative</div>
+                    <h2 class="serif text-3xl text-navy mb-3 leading-tight italic">Swachhta Hi Sewa: <br>Civic Duty in
+                        Action</h2>
+                    <p class="text-xs text-gray-600 leading-relaxed text-justify mb-4">
+                        USET students took a meaningful step toward sustainability by leading the <strong>‘Swachhta Hi
+                            Sewa’</strong> campaign. This initiative highlighted environmental awareness and the true
+                        NSS spirit of <strong>“Not Me, But You.”</strong> Through collective action, our volunteers
+                        demonstrated how small steps create a cleaner, more responsible campus community.
+                    </p>
+                    <div class="flex items-center space-x-2 text-gold">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Sustainability • Responsibility •
+                            Service</span>
+                    </div>
+                </div>
+                <div class="col-span-7">
+                    <div class="relative group">
+                        <div
+                            class="w-full aspect-video bg-gray-50 border-2 border-navy shadow-xl overflow-hidden flex items-center justify-center relative">
+                            <img src="images/Swachhta Hi Sewa.jpg" alt="Swachhta Hi Sewa"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute bottom-0 right-0 bg-gold text-white px-4 py-2 text-[9px] font-bold uppercase tracking-widest">
+                                NSS Volunteers at Work</div>
+                        </div>
+                        <!-- Decorative Frame -->
+                        <div class="absolute -top-3 -left-3 w-10 h-10 border-t-4 border-l-4 border-gold"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Divider Quote -->
+            <div class="text-center px-16">
+                <p class="serif text-xl text-navy italic opacity-80 leading-relaxed">
+                    "Empowerment is not just about giving a voice, but ensuring that every voice is heard, respected,
+                    and valued."
+                </p>
+            </div>
+
+            <!-- FEATURE 2: Safe Space for Girls -->
+            <section class="grid grid-cols-12 gap-10 items-center">
+                <div class="col-span-7">
+                    <div class="relative group">
+                        <div
+                            class="w-full aspect-video bg-gray-50 border-2 border-gold shadow-xl overflow-hidden flex items-center justify-center relative">
+                            <img src="images/Girls.jpg" alt="Safe Space for Girls" class="w-full h-full object-cover">
+                            <div
+                                class="absolute top-0 left-0 bg-navy text-gold px-4 py-2 text-[9px] font-bold uppercase tracking-widest">
+                                Mentorship & Dialogue</div>
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 w-10 h-10 border-b-4 border-r-4 border-navy"></div>
+                    </div>
+                </div>
+                <div class="col-span-5 flex flex-col justify-center">
+                    <div
+                        class="inline-block bg-gold text-white px-3 py-1 text-[9px] font-bold uppercase tracking-widest mb-3 w-fit ml-auto">
+                        Empowerment Circle</div>
+                    <h2 class="serif text-3xl text-navy mb-3 leading-tight italic text-right">A Safe Space for <br>Our
+                        Girls</h2>
+                    <p class="text-xs text-gray-600 leading-relaxed text-right mb-4">
+                        On <strong>12th August 2025</strong>, USET hosted a transformative session for B.Tech female
+                        students led by <strong>Mrs. Meenakshi Sharma (HOD, CSE)</strong>. The gathering provided a
+                        sanctuary for students to share concerns, fostering trust, empowerment, and open dialogue.
+                        <strong>Because every voice matters.</strong>
+                    </p>
+                    <div class="flex items-center justify-end space-x-3">
+                        <div class="text-right">
+                            <p class="text-[10px] font-bold uppercase text-navy">Fostering Trust</p>
+                            <p class="text-[8px] text-gray-400">August 2025 Session</p>
+                        </div>
+                        <div class="w-1 h-8 bg-gold"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="bg-white p-6 border-t border-gray-200 flex justify-between items-center text-[10px] text-gray-500 font-medium uppercase tracking-widest relative z-20">
+            <div class="text-navy font-bold">&copy; 2025 University School of Engineering & Technology</div>
+            <div class="flex space-x-4">
+                <span>Community Service</span>
+                <span>•</span>
+                <span>Empowerment</span>
+                <span>•</span>
+                <span>Social Responsibility</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Controls -->
+    <div class="fixed bottom-5 right-5 no-print">
+        <button onclick="window.print()"
+            class="bg-[#002147] text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-opacity-90 transition-all flex items-center border border-gold/30">
+            Print Page 15
+        </button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Page 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none; }
+            .page-container { 
+                width: 210mm; 
+                height: 297mm; 
+                margin: 0; 
+                box-shadow: none;
+            }
+        }
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .bg-navy { background-color: #002147; }
+        .text-gold { color: #B4975A; }
+        .border-gold { border-color: #B4975A; }
+        
+        .section-tag {
+            background-color: #B4975A;
+            color: white;
+            padding: 4px 12px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .image-placeholder {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Top Header Navigation -->
+        <header class="bg-navy p-6 flex justify-between items-center text-white">
+            <div class="flex items-center space-x-4">
+                <img src="images/LOGO.png" alt="USET Logo" class="w-12 h-12 object-contain">
+                <div>
+                    <h2 class="serif text-lg tracking-wider">THE USET CHRONICLE</h2>
+                    <p class="text-[10px] uppercase tracking-[0.2em] opacity-80">Empowering Excellence | July – Dec 2025</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <span class="text-gold font-bold text-xl">03</span>
+            </div>
+        </header>
+
+        <main class="flex-grow p-10 overflow-hidden">
+            <!-- Title Section -->
+            <section class="mb-8">
+                <h1 class="serif text-4xl text-navy">Industry <span class="text-gold italic">Immersions</span></h1>
+                <p class="text-sm text-gray-500 mt-2 uppercase tracking-[0.3em]">Bridging the gap between Campus & Corporate</p>
+            </section>
+
+            <div class="grid grid-cols-2 gap-10">
+                
+                <!-- Left Column: L&T Feature -->
+                <div class="space-y-8">
+                    <article>
+                        <div class="section-tag">Strategic Partnership</div>
+                        <h2 class="serif text-2xl text-navy mb-3">L&T Cyber-Physical Systems (CPS) Training</h2>
+                        <div class="w-full h-48 mb-4">
+                            <img src="images/Cyber-Physical Systems.jpeg.jpg" alt="L&T CPS Training Session - Batch 4" class="w-full h-full object-cover rounded">
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed text-justify">
+                            USET successfully conducted the 4th batch of intensive training on <strong>Cyber-Physical Systems</strong> in collaboration with <strong>L&T</strong>. This program focuses on integrating computational algorithms with physical processes, preparing students for Industry 4.0. The hands-on sessions covered sensor networks, embedded systems, and real-time data processing, ensuring our engineers are ready for the complex demands of modern infrastructure.
+                        </p>
+                    </article>
+
+                    <article class="bg-gray-50 p-6 border-l-4 border-gold">
+                        <h3 class="serif text-lg text-navy mb-2">L&T Product Design Thinking</h3>
+                        <div class="w-full h-40 mb-3 overflow-hidden">
+                            <img src="images/Product Design Thinking.jpeg.jpg" alt="Students presenting design prototypes" class="w-full h-full object-cover object-center rounded">
+                        </div>
+                        <p class="text-[11px] text-gray-600 italic leading-snug">
+                            Expert sessions on Design Thinking enabled students to approach engineering problems with a human-centric mindset, focusing on empathy, ideation, and rapid prototyping.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Right Column: IBM & Microsoft -->
+                <div class="space-y-8">
+                    <article>
+                        <div class="section-tag">Tech Excellence</div>
+                        <h2 class="serif text-2xl text-navy mb-3">IBM SME & SkillsBuild Technical Sessions</h2>
+                        <div class="w-full h-48 mb-4">
+                            <img src="images/SkillsBuild Technical Sessions.jpeg.jpg" alt="IBM SME Mentorship Program Interaction" class="w-full h-full object-cover rounded">
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed text-justify">
+                            The semester witnessed a robust engagement with <strong>IBM</strong> through specialized Technical SME sessions. Students across various departments were enrolled in the <strong>IBM SkillsBuild</strong> platform, earning professional certifications in Emerging Technologies. These sessions, led by industry veterans, provided deep insights into Enterprise-level Cloud Computing and AI deployment strategies.
+                        </p>
+                    </article>
+
+                    <div class="grid grid-cols-1 gap-4 mt-6">
+                        <article class="border-t border-gray-200 pt-4">
+                            <h3 class="serif text-lg text-navy mb-1">Microsoft AI Bootcamp</h3>
+                            <p class="text-[11px] text-gray-500 mb-3">Innovation & Intelligence</p>
+                            <div class="w-full h-48 mb-3 overflow-hidden rounded">
+                                <img src="images/Microsoft AI Bootcamp.jpeg.jpg" alt="Microsoft AI Bootcamp Batch" class="w-full h-full object-cover object-center">
+                            </div>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                A dedicated 5-day bootcamp focused on Azure AI services and Machine Learning models, helping students build scalable AI solutions for real-world problems.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Quote/Stat -->
+            <section class="mt-12 bg-navy p-6 text-white rounded-lg flex items-center justify-between">
+                <div class="flex-1">
+                    <p class="serif text-xl italic opacity-90 text-gold">"We don't just teach technology; we create the architects of the digital era."</p>
+                </div>
+                <div class="ml-6 border-l border-white/20 pl-6">
+                    <div class="text-3xl font-bold text-gold">450+</div>
+                    <div class="text-[8px] uppercase tracking-widest">Students Certified</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-6 border-t border-gray-100 flex justify-between items-center text-[9px] text-gray-400 font-medium uppercase tracking-widest">
+            <div>&copy; 2025 University School of Engineering & Technology</div>
+            <div class="flex space-x-4">
+                <span>Industry Ready</span>
+                <span>•</span>
+                <span>L&T Collaboration</span>
+                <span>•</span>
+                <span>IBM Partnership</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Controls -->
+    <div class="fixed bottom-5 right-5 no-print flex space-x-2">
+        <button onclick="window.print()" class="bg-navy text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg hover:bg-opacity-90 transition-all">Print Page</button>
+    </div>
+
+</body>
+</html>

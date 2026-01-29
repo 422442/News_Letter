@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Page 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none; }
+            .page-container { 
+                width: 210mm; 
+                height: 297mm; 
+                margin: 0; 
+                box-shadow: none;
+            }
+        }
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .bg-navy { background-color: #002147; }
+        .text-gold { color: #B4975A; }
+        .border-gold { border-color: #B4975A; }
+        
+        .image-placeholder {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 9px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .gold-bullet {
+            width: 6px;
+            height: 6px;
+            background-color: #B4975A;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #B4975A, transparent);
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Top Header Navigation -->
+        <header class="bg-navy p-6 flex justify-between items-center text-white">
+            <div class="flex items-center space-x-4">
+                <img src="images/LOGO.png" alt="USET Logo" class="w-12 h-12 object-contain">
+                <div>
+                    <h2 class="serif text-lg tracking-wider">THE USET CHRONICLE</h2>
+                    <p class="text-[10px] uppercase tracking-[0.2em] opacity-80">Empowering Excellence | July – Dec 2025</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <span class="text-gold font-bold text-xl">05</span>
+            </div>
+        </header>
+
+        <main class="flex-grow p-8 overflow-hidden">
+            <!-- Title Section -->
+            <section class="mb-6">
+                <h1 class="serif text-4xl text-navy">Skills & <span class="text-gold italic">Intelligence</span></h1>
+                <p class="text-sm text-gray-500 mt-2 uppercase tracking-[0.3em]">Mastering the Future of Engineering</p>
+            </section>
+
+            <!-- Top Row: Features -->
+            <div class="grid grid-cols-2 gap-8 mb-6">
+                <article>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="bg-blue-100 text-blue-800 text-[9px] font-bold px-2 py-0.5 rounded">BOOTCAMP</span>
+                        <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Microsoft Azure</span>
+                    </div>
+                    <h2 class="serif text-2xl text-navy mb-3">Empowering AI: Azure Bootcamp</h2>
+                    <div class="w-full h-40 mb-4 overflow-hidden rounded">
+                        <img src="images/AI Bootcamp.jpg" alt="Students deploying ML models on Microsoft Azure" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs text-gray-600 leading-relaxed text-justify">
+                        USET delivered an intensive 5-Day <strong>Microsoft AI Bootcamp</strong>, moving beyond theory to help students deploy Machine Learning models using <strong>Azure Cognitive Services</strong>. Over 100 students mastered cloud-based intelligence and ethical AI deployment.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="bg-orange-100 text-orange-800 text-[9px] font-bold px-2 py-0.5 rounded">L&T ACADEMY</span>
+                        <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Product Strategy</span>
+                    </div>
+                    <h2 class="serif text-2xl text-navy mb-3">Human-Centric Design Thinking</h2>
+                    <div class="w-full h-40 mb-4 overflow-hidden rounded">
+                        <img src="images/Product Design.jpg" alt="Ideation wall with Low-Fidelity Prototypes" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs text-gray-600 leading-relaxed text-justify">
+                        The <strong>L&T Product Design Thinking</strong> workshop transformed how students approach problem-solving. By focusing on the user journey—Empathize, Define, Ideate, and Prototype—engineers developed human-centric solutions for real-world industrial pain points.
+                    </p>
+                </article>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Middle Row: Verified Data Points -->
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Event 1: FDP (Verified) -->
+                <div class="space-y-3">
+                    <h3 class="serif text-lg text-navy border-b border-gold/30 pb-1">FDP: Start-ups & IPR</h3>
+                    <div class="w-full h-24 overflow-hidden rounded">
+                        <img src="images/NITTTR Chandigarh.jpg" alt="Inauguration of FDP with NITTTR Chandigarh" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-[10px] text-gray-600 leading-relaxed">
+                        In collaboration with <strong>NITTTR Chandigarh</strong>, USET hosted a 5-day Faculty Development Programme on "Business Start-ups and Intellectual Property Rights." Experts shared insights on translating research into impactful commercial ventures.
+                    </p>
+                </div>
+
+                <!-- Event 2: Train-to-Hire (Verified Replacement) -->
+                <div class="space-y-3">
+                    <h3 class="serif text-lg text-navy border-b border-gold/30 pb-1">Train-to-Hire Program</h3>
+                    <div class="w-full h-24 overflow-hidden rounded">
+                        <img src="images/Train-to-Hire.jpg" alt="Industry experts conducting skill-based assessment" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-[10px] text-gray-600 leading-relaxed">
+                        The <strong>"Train-to-Hire"</strong> program was launched to provide final-year students with industry-specific skill sets. This initiative ensures that USET graduates are not just degree holders but corporate-ready professionals for global markets.
+                    </p>
+                </div>
+
+                <!-- Event 3: Industrial Visit (Verified Replacement) -->
+                <div class="space-y-3">
+                    <h3 class="serif text-lg text-navy border-b border-gold/30 pb-1">Visit: Sensation Software</h3>
+                    <div class="w-full h-24 overflow-hidden rounded">
+                        <img src="images/Sensation.jpg" alt="Students visiting Sensation Software Solutions" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-[10px] text-gray-600 leading-relaxed">
+                        An industrial visit to <strong>Sensation Software Solutions Pvt Ltd</strong> allowed students to witness real-time software development life cycles and interact with project managers to understand the current demands of the IT workforce.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Outcomes -->
+            <section class="mt-10 bg-navy p-6 rounded-lg text-white flex justify-around items-center">
+                <div class="text-center">
+                    <div class="text-xl font-bold text-gold">500+</div>
+                    <div class="text-[8px] uppercase tracking-widest opacity-60">Certifications Issued</div>
+                </div>
+                <div class="h-8 w-px bg-white/20"></div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-gold">05+</div>
+                    <div class="text-[8px] uppercase tracking-widest opacity-60">Industry Partners</div>
+                </div>
+                <div class="h-8 w-px bg-white/20"></div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-gold">100%</div>
+                    <div class="text-[8px] uppercase tracking-widest opacity-60">Practical Engagement</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-3 px-6 border-t border-gray-100 flex justify-between items-center text-[9px] text-gray-400 font-medium uppercase tracking-widest">
+            <div>&copy; 2025 University School of Engineering & Technology</div>
+            <div class="flex space-x-4">
+                <span>Technical Bootcamps</span>
+                <span>•</span>
+                <span>IPR Awareness</span>
+                <span>•</span>
+                <span>Industry Visits</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Controls -->
+    <div class="fixed bottom-5 right-5 no-print flex space-x-2">
+        <button onclick="window.print()" class="bg-navy text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg hover:bg-opacity-90">Print Page</button>
+    </div>
+
+</body>
+</html>

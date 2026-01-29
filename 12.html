@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Page 13</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Global Color Scheme (Matching Page 11) */
+        .bg-navy {
+            background-color: #002147;
+        }
+
+        .text-navy {
+            color: #002147;
+        }
+
+        .border-navy {
+            border-color: #002147;
+        }
+
+        .bg-gold {
+            background-color: #B4975A;
+        }
+
+        .text-gold {
+            color: #B4975A;
+        }
+
+        .border-gold {
+            border-color: #B4975A;
+        }
+
+        /* Specific Colors for Motto Section Only */
+        .text-motto-navy {
+            color: #2E3192;
+        }
+
+        .text-motto-red {
+            color: #ED1C24;
+        }
+
+        .bg-motto-red {
+            background-color: #ED1C24;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            /* A4 Size */
+            background: white;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Konark Wheel / Moto Section */
+        .moto-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            position: relative;
+            z-index: 20;
+        }
+
+        .moto-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .nss-logo-container {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .nss-logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* No animation */
+        }
+
+        /* Image Frames */
+        .image-container {
+            width: 100%;
+            height: 280px;
+            /* Much space for images */
+            background-color: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .image-container:hover {
+            border-color: #002147;
+            background-color: #f1f5f9;
+        }
+
+        .image-placeholder {
+            color: #94a3b8;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .social-footer {
+            height: 110px;
+            background: #002147;
+            /* Global Navy */
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            color: white;
+            position: relative;
+        }
+
+        .footer-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: #B4975A;
+            /* Global Gold */
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-container {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <!-- Header -->
+        <header class="bg-navy p-8 flex justify-between items-center text-white relative z-20">
+            <div class="flex items-center space-x-5">
+                <!-- Logo -->
+                <img src="images/LOGO.png" alt="USET Logo"
+                    class="w-16 h-16 object-contain bg-white rounded-full border-2 border-gold shadow-lg">
+                <div class="border-l border-white/20 pl-5">
+                    <h2 class="serif text-2xl tracking-[0.1em] uppercase">Social Mission</h2>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-gold font-semibold italic">USET: Service
+                        Before Self</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-[10px] uppercase tracking-widest opacity-70 mb-0">Page</p>
+                <span class="text-gold font-bold text-3xl">13</span>
+            </div>
+        </header>
+
+        <main class="flex-grow flex flex-col justify-center px-12 py-4 space-y-10">
+
+            <!-- Top Section: Image Left, Text Right -->
+            <div class="flex flex-row items-center gap-10">
+                <!-- Large Image Section (60% width) -->
+                <div class="w-3/5">
+                    <div class="image-container shadow-xl border-navy/10 rounded-sm">
+                        <img src="images/Drug.jpg" alt="Drug-Free Campus Pledge" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <!-- Text Section (40% width) -->
+                <div class="w-2/5 text-right">
+                    <div class="flex items-center justify-end space-x-3 mb-3">
+                        <span class="text-[11px] font-bold text-gray-400 uppercase tracking-widest">19th Sept
+                            2025</span>
+                        <div class="w-10 h-1 bg-gold"></div>
+                    </div>
+                    <h3 class="serif text-3xl text-navy mb-4 leading-tight font-bold">Pledge for a <br><span
+                            class="text-gold italic">Drug-Free Campus</span></h3>
+                    <p class="text-[12px] text-gray-600 leading-relaxed text-justify pl-6 font-medium">
+                        The USET NSS team organized a monumental pledge activity to raise awareness against drug use. In
+                        the presence of <span class="font-bold text-navy">Dr. V.K. Saini</span> and <span
+                            class="font-bold text-navy">Ratan Kaur</span>, students committed to a <span
+                            class="font-bold">healthier, safer, and empowered campus</span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Middle Section: Stylish Motto -->
+            <div class="moto-container">
+                <div class="moto-text text-right text-motto-navy">Not Me</div>
+
+                <!-- NSS Logo Image -->
+                <div class="nss-logo-container">
+                    <img src="images/NSS_Logo.png" alt="NSS Logo" class="nss-logo-img">
+                </div>
+
+                <div class="moto-text text-left text-motto-red">But You</div>
+            </div>
+
+            <!-- Bottom Section: Text Left, Image Right -->
+            <div class="flex flex-row items-center gap-10">
+                <!-- Text Section (40% width) -->
+                <div class="w-2/5 text-left">
+                    <div class="flex items-center justify-start space-x-3 mb-3">
+                        <div class="w-10 h-1 bg-gold"></div>
+                        <span class="text-[11px] font-bold text-gray-400 uppercase tracking-widest">Aug 26-29,
+                            2025</span>
+                    </div>
+                    <h3 class="serif text-3xl text-navy mb-4 leading-tight font-bold">Youth <span
+                            class="text-gold italic">Employability</span> <br>Skills Training</h3>
+                    <p class="text-[12px] text-gray-600 leading-relaxed text-justify pr-6 font-medium">
+                        NSS volunteers participated in a <span class="font-bold">4-day intensive training program</span>
+                        enhancing <span class="font-bold text-navy">communication, soft skills, and leadership</span>.
+                        This dedication transformed the program into a stepping stone for growth.
+                    </p>
+                </div>
+                <!-- Large Image Section (60% width) -->
+                <div class="w-3/5">
+                    <div class="image-container shadow-xl border-navy/10 rounded-sm">
+                        <img src="images/Industry.jpg" alt="Youth Employability Skills Training"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="social-footer">
+            <div class="footer-accent"></div>
+            <div class="w-full flex justify-between items-center">
+                <div class="flex flex-col">
+                    <h4 class="text-[13px] font-bold uppercase tracking-[0.2em] text-gold">Building Communities</h4>
+                    <p class="text-[11px] opacity-80 text-white max-w-[350px] mt-1 font-light">NSS LTSU is committed to
+                        fostering social responsibility through active engagement.</p>
+                </div>
+                <div class="flex items-center space-x-10">
+                    <div class="text-right">
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="text-right">
+                        <p class="text-[10px] uppercase tracking-widest opacity-60 mb-0.5">Visit</p>
+                        <p class="text-[13px] font-bold text-gold">www.lamrin.edu.in</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Print Button -->
+    <div class="fixed bottom-5 right-5 no-print">
+        <button onclick="window.print()"
+            class="bg-[#002147] text-white px-6 py-2 rounded-full font-bold shadow-2xl hover:bg-opacity-90 transition-all flex items-center border border-white/20">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            Print Page
+        </button>
+    </div>
+
+</body>
+
+</html>

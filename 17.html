@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Page 17</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-navy {
+            background-color: #002147;
+        }
+
+        .text-navy {
+            color: #002147;
+        }
+
+        .text-gold {
+            color: #B4975A;
+        }
+
+        .bg-gold {
+            background-color: #B4975A;
+        }
+
+        .border-gold {
+            border-color: #B4975A;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Tech-inspired background pattern */
+        .tech-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 1px 1px, rgba(180, 151, 90, 0.08) 1px, transparent 0);
+            background-size: 25px 25px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .diagonal-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100%;
+            background: #f8fafc;
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+            z-index: 1;
+        }
+
+        .podium-card {
+            border-left: 4px solid #B4975A;
+            background: linear-gradient(to right, rgba(180, 151, 90, 0.05), transparent);
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-container {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- Background Elements -->
+        <div class="tech-pattern"></div>
+        <div class="diagonal-accent"></div>
+
+        <!-- Header -->
+        <header class="bg-navy p-8 flex justify-between items-center text-white relative z-20">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gold"></div>
+            <div class="flex items-center space-x-5">
+                <img src="images/LOGO.png" alt="USET Logo" class="w-14 h-14 object-contain">
+                <div class="border-l border-white/20 pl-5">
+                    <h2 class="serif text-2xl tracking-[0.1em] uppercase">The USET Chronicle</h2>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-gold font-semibold">Innovation & Hackathons |
+                        July – Dec 2025</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-[10px] uppercase tracking-widest opacity-60 mb-1">Page</p>
+                <span class="text-gold font-bold text-3xl">17</span>
+            </div>
+        </header>
+
+        <main class="flex-grow relative z-10 flex flex-col px-12 pt-6">
+            <!-- SECTION 1: IDEATHON & SIH INTERNAL HACKATHON -->
+            <section class="mb-6">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="h-1 w-12 bg-gold"></div>
+                    <p class="text-[10px] uppercase tracking-[0.5em] text-gray-400 font-bold">Engineers' Day Special</p>
+                </div>
+
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-7">
+                        <h1 class="serif text-5xl text-navy leading-tight mb-6">Ideathon <span
+                                class="text-gold italic">&</span> <br>SIH Hackathon</h1>
+                        <p class="text-xs text-gray-600 leading-relaxed text-justify mb-6">
+                            On 15th September 2025, USET celebrated Engineers’ Day with an inspiring Ideathon and SIH
+                            Internal Hackathon. <strong>45 teams</strong> presented innovative solutions before industry
+                            experts <strong>Dr. Rangarajan P (L&T)</strong> and <strong>Mr. Lavish Arora (Race Pvt.
+                                Ltd.)</strong>. The event served as a crucible for creativity, featuring posters,
+                            quizzes, and project demos.
+                        </p>
+
+                        <!-- Victory Podium List (Horizontal) -->
+                        <div class="grid grid-cols-3 gap-2 mt-4">
+                            <div class="bg-gold/5 border-t-2 border-gold p-3 text-center shadow-sm">
+                                <div class="text-lg mb-1">🥇</div>
+                                <div class="text-[9px] font-bold text-navy uppercase leading-tight">Team B.R.I.C.S</div>
+                                <div class="text-[7px] font-bold text-gold uppercase tracking-widest mt-1">Winner</div>
+                            </div>
+                            <div class="bg-gray-50 border-t-2 border-navy/30 p-3 text-center shadow-sm">
+                                <div class="text-lg mb-1">🥈</div>
+                                <div class="text-[9px] font-bold text-navy uppercase leading-tight">Team Git Gud</div>
+                                <div class="text-[7px] font-bold text-gray-400 uppercase tracking-widest mt-1">2nd Place
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 border-t-2 border-navy/10 p-3 text-center shadow-sm">
+                                <div class="text-lg mb-1">🥉</div>
+                                <div class="text-[9px] font-bold text-navy uppercase leading-tight">Team PathSyncers
+                                </div>
+                                <div class="text-[7px] font-bold text-gray-400 uppercase tracking-widest mt-1">3rd Place
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-5">
+                        <div class="relative group mt-12">
+                            <div
+                                class="w-full aspect-square bg-white border-2 border-gold shadow-2xl relative overflow-hidden flex items-center justify-center p-2">
+                                <img src="images/Ideathon & SIH Internal Hackathon.jpg" alt="Ideathon & SIH Showcase"
+                                    class="w-full h-full object-cover">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-navy text-gold p-3 text-[9px] font-bold uppercase tracking-widest">
+                                    Ideathon & SIH Showcase</div>
+                            </div>
+                            <!-- Background accent -->
+                            <div
+                                class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-gold opacity-30">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <div class="py-2 flex justify-center items-center my-1">
+                <div
+                    class="relative w-full max-w-3xl text-center border-y border-gold/10 py-2 bg-white/50 backdrop-blur-sm">
+                    <p class="font-serif text-sm text-navy italic tracking-wide relative z-10">
+                        <span class="text-xl text-gold mr-1">“</span>
+                        Innovation is seeing what everybody has seen and thinking what nobody has thought.
+                        <span class="text-xl text-gold ml-1">”</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- SECTION 2: 24-HOUR HACKATHON -->
+            <section class="mt-auto mb-4">
+                <div
+                    class="bg-navy p-10 rounded-tr-[80px] text-white shadow-2xl relative overflow-hidden border-b-4 border-gold">
+                    <div class="grid grid-cols-12 gap-10 items-center relative z-10">
+                        <div class="col-span-4">
+                            <div
+                                class="w-full aspect-square bg-white/5 border border-white/20 rounded-sm relative overflow-hidden flex items-center justify-center p-2 backdrop-blur-sm">
+                                <img src="images/24-Hour Hackathon.jpg" alt="24-Hour Hackathon"
+                                    class="w-full h-full object-cover">
+                                <div
+                                    class="absolute top-0 right-0 bg-gold text-navy px-3 py-1 text-[8px] font-bold uppercase tracking-widest">
+                                    CU Venue</div>
+                            </div>
+                        </div>
+                        <div class="col-span-8">
+                            <div class="flex items-center space-x-2 mb-4">
+                                <span class="text-gold text-[10px] font-bold uppercase tracking-[0.3em]">Endurance &
+                                    Innovation</span>
+                                <div class="h-px flex-grow bg-white/20"></div>
+                            </div>
+                            <h2 class="serif text-4xl mb-4">USET Shines at <br><span class="text-gold">24-Hour
+                                    Hackathon</span></h2>
+                            <p class="text-[11px] opacity-80 leading-relaxed text-justify mb-6">
+                                From 20th–21st August 2025, <strong>7 teams</strong> represented LTSU at the 24-hour
+                                Hackathon hosted by Chandigarh University. With mentorship from <strong>GitHub
+                                    experts</strong>, our students demonstrated technical excellence and entrepreneurial
+                                spirit. Two teams — <strong>Team Tech Buzz</strong> and <strong>Team Hack
+                                    Avengers</strong> — secured places among the Top 10 finishers, marking a significant
+                                milestone for USET.
+                            </p>
+                            <div class="flex space-x-6">
+                                <div class="border-l border-gold pl-4">
+                                    <p class="text-xs font-bold text-gold">Top 10 Finishers</p>
+                                    <p class="text-[9px] uppercase tracking-widest opacity-60">National Level
+                                        Participation</p>
+                                </div>
+                                <div class="border-l border-white/20 pl-4">
+                                    <p class="text-xs font-bold text-white">7 Teams</p>
+                                    <p class="text-[9px] uppercase tracking-widest opacity-60">LTSU Representatives</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Circuit design elements -->
+                    <div class="absolute -bottom-10 -right-10 w-48 h-48 border border-white opacity-5 rounded-full">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="p-6 bg-white border-t border-gray-100 flex justify-between items-center text-[9px] text-gray-400 font-medium uppercase tracking-[0.2em] relative z-20">
+            <div>University School of Engineering & Technology</div>
+            <div class="flex space-x-6">
+                <span>Tradition</span>
+                <span class="text-gold">•</span>
+                <span>Inspiration</span>
+                <span class="text-gold">•</span>
+                <span>Community</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Print Control -->
+    <div class="fixed bottom-5 right-5 no-print">
+        <button onclick="window.print()"
+            class="bg-[#002147] text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-opacity-90 transition-all flex items-center border border-gold/30 text-xs">
+            Print Page 17
+        </button>
+    </div>
+
+</body>
+
+</html>

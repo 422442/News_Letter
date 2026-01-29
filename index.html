@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Reader Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            /* Slate 900 */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Prevent body scroll, let iframe handle it */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content-frame {
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: white;
+            transition: opacity 0.2s ease;
+        }
+
+        .controls-overlay {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Show controls on hover near bottom or when active */
+        body:hover .controls-overlay {
+            opacity: 1;
+        }
+
+        .nav-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #B4975A;
+            border-color: #B4975A;
+            transform: scale(1.1);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            background: transparent;
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: none;
+        }
+
+        .page-indicator {
+            color: #94a3b8;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .home-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 50;
+            background: rgba(15, 23, 42, 0.8);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            text-decoration: none;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.2s;
+            opacity: 0.5;
+        }
+
+        .home-btn:hover {
+            opacity: 1;
+            background: #B4975A;
+            border-color: #B4975A;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <iframe id="content-frame" src=""></iframe>
+
+    <div class="controls-overlay">
+        <button id="prev-btn" class="nav-btn" onclick="prevPage()">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <span id="page-label" class="page-indicator">COVER</span>
+
+        <button id="next-btn" class="nav-btn" onclick="nextPage()">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Define the sequence of pages
+        const pages = [
+            { file: 'front_Cover.html', label: 'Front Cover' },
+            { file: 'Front.html', label: 'Highlights' },
+            { file: '1.html', label: 'Page 01' },
+            { file: '2.html', label: 'Page 02' },
+            { file: '3.html', label: 'Page 03' },
+            { file: '4.html', label: 'Page 04' },
+            { file: '5.html', label: 'Page 05' },
+            { file: '6.html', label: 'Page 06' },
+            { file: '7.html', label: 'Page 07' },
+            { file: '8.html', label: 'Page 08' },
+            { file: '9.html', label: 'Page 09' },
+            { file: '10.html', label: 'Page 10' },
+            { file: '11.html', label: 'Page 11' },
+            { file: '12.html', label: 'Page 12' },
+            { file: '13.html', label: 'Page 13' },
+            // Note: 14.html is missing in the source directory
+            { file: '15.html', label: 'Page 15' },
+            { file: '16.html', label: 'Page 16' },
+            { file: '17.html', label: 'Page 17' },
+            { file: '18.html', label: 'Page 18' },
+            { file: '19.html', label: 'Page 19' },
+            { file: '20.html', label: 'Page 20' },
+            { file: '21.html', label: 'Page 21' },
+            { file: '22.html', label: 'Page 22' },
+            { file: 'final.html', label: 'Back Cover' }
+        ];
+
+        let currentIndex = 0;
+        const iframe = document.getElementById('content-frame');
+        const pageLabel = document.getElementById('page-label');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function loadPage(index) {
+            if (index < 0 || index >= pages.length) return;
+
+            currentIndex = index;
+            const page = pages[currentIndex];
+
+            // Fade effect
+            iframe.style.opacity = '0';
+            setTimeout(() => {
+                iframe.src = page.file;
+                pageLabel.textContent = page.label.toUpperCase();
+                iframe.onload = () => {
+                    iframe.style.opacity = '1';
+                };
+            }, 200);
+
+            // Update button states
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === pages.length - 1;
+        }
+
+        function nextPage() {
+            if (currentIndex < pages.length - 1) {
+                loadPage(currentIndex + 1);
+            }
+        }
+
+        function prevPage() {
+            if (currentIndex > 0) {
+                loadPage(currentIndex - 1);
+            }
+        }
+
+        // Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+                nextPage();
+            } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
+                prevPage();
+            }
+        });
+
+        // Initial Load
+        loadPage(0);
+
+    </script>
+</body>
+
+</html>

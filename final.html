@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USET Newsletter - Back Cover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-navy {
+            background-color: #002147;
+        }
+
+        .text-gold {
+            color: #B4975A;
+        }
+
+        .border-gold {
+            border-color: #B4975A;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            background: #002147;
+            /* Full Navy Background for the Back Cover */
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            color: white;
+        }
+
+        /* Abstract Tech Lines Background */
+        .tech-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(180, 151, 90, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(180, 151, 90, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+        }
+
+        /* Golden Corner Accents */
+        .corner-accent {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(180, 151, 90, 0.2);
+            border-radius: 50%;
+        }
+
+        .logo-target {
+            width: 240px;
+            height: 240px;
+            border: 2px dashed rgba(180, 151, 90, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo-target::before {
+            content: '';
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border: 1px solid rgba(180, 151, 90, 0.2);
+            border-radius: 50%;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-container {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- Background Decorations -->
+        <div class="tech-lines"></div>
+        <div class="corner-accent -top-32 -left-32"></div>
+        <div class="corner-accent -bottom-32 -right-32"></div>
+
+        <main class="flex-grow flex flex-col items-center justify-center relative z-10 px-16 text-center">
+
+            <!-- Central Logo Placement Space -->
+            <div class="mb-12">
+                <div class="logo-target mx-auto">
+                    <img src="images/LOGO.png" alt="USET Logo" class="w-full h-full object-contain p-6">
+                </div>
+            </div>
+
+            <!-- Closing Text -->
+            <div class="max-w-2xl">
+                <h1 class="serif text-6xl mb-6 tracking-tight">THE USET <br><span
+                        class="text-gold italic">CHRONICLE</span></h1>
+                <p class="text-[11px] uppercase tracking-[0.6em] text-gold font-bold mb-10 opacity-80">Empowering
+                    Excellence</p>
+
+                <div class="h-px w-24 bg-gold/40 mx-auto mb-10"></div>
+
+                <p class="text-sm opacity-60 leading-relaxed font-light mb-12 italic">
+                    "This newsletter is a testament to the relentless pursuit of innovation, the grit of our students,
+                    and the visionary leadership of our faculty. As we close the July-December 2025 session, we look
+                    forward to a future engineered by the very minds nurtured within these halls."
+                </p>
+            </div>
+
+            <!-- Contact & Social Details -->
+
+
+        </main>
+
+        <!-- Final Branding Strip -->
+        <div class="relative z-10 py-10 text-center">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <div class="h-[1px] w-12 bg-gold/20"></div>
+
+                <div class="h-[1px] w-12 bg-gold/20"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-widest opacity-30 italic">&copy; 2025 University School
+                of Engineering & Technology</p>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="fixed bottom-5 right-5 no-print flex space-x-2">
+        <button onclick="window.print()"
+            class="bg-gold text-navy px-6 py-2 rounded-full font-bold shadow-2xl hover:scale-105 transition-all text-xs">
+            Final Export / Save PDF
+        </button>
+    </div>
+
+</body>
+
+</html>
